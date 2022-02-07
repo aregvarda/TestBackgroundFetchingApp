@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8C372AE27B17AA700000940 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C372AD27B17AA700000940 /* TimerViewModel.swift */; };
 		C8CF0ADE27B16E1D0050A53D /* TestBackgroundFetchingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0ADD27B16E1D0050A53D /* TestBackgroundFetchingAppApp.swift */; };
 		C8CF0AE027B16E1D0050A53D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0ADF27B16E1D0050A53D /* ContentView.swift */; };
 		C8CF0AE227B16E230050A53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CF0AE127B16E230050A53D /* Assets.xcassets */; };
 		C8CF0AE527B16E230050A53D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CF0AE427B16E230050A53D /* Preview Assets.xcassets */; };
+		C8CF0AEF27B174E40050A53D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0AEE27B174E40050A53D /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8C372AD27B17AA700000940 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		C8C372AF27B19DBE00000940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C8CF0ADA27B16E1D0050A53D /* TestBackgroundFetchingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBackgroundFetchingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CF0ADD27B16E1D0050A53D /* TestBackgroundFetchingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBackgroundFetchingAppApp.swift; sourceTree = "<group>"; };
 		C8CF0ADF27B16E1D0050A53D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8CF0AE127B16E230050A53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CF0AE427B16E230050A53D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8CF0AEE27B174E40050A53D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,10 @@
 		C8CF0ADC27B16E1D0050A53D /* TestBackgroundFetchingApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8C372AF27B19DBE00000940 /* Info.plist */,
+				C8CF0AED27B16E4B0050A53D /* View */,
+				C8CF0AEC27B16E460050A53D /* Model */,
+				C8CF0AEB27B16E3F0050A53D /* ViewModel */,
 				C8CF0ADD27B16E1D0050A53D /* TestBackgroundFetchingAppApp.swift */,
 				C8CF0ADF27B16E1D0050A53D /* ContentView.swift */,
 				C8CF0AE127B16E230050A53D /* Assets.xcassets */,
@@ -65,6 +74,29 @@
 				C8CF0AE427B16E230050A53D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8CF0AEB27B16E3F0050A53D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8C372AD27B17AA700000940 /* TimerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8CF0AEC27B16E460050A53D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8CF0AED27B16E4B0050A53D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF0AEE27B174E40050A53D /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C372AE27B17AA700000940 /* TimerViewModel.swift in Sources */,
 				C8CF0AE027B16E1D0050A53D /* ContentView.swift in Sources */,
+				C8CF0AEF27B174E40050A53D /* Home.swift in Sources */,
 				C8CF0ADE27B16E1D0050A53D /* TestBackgroundFetchingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +306,7 @@
 				DEVELOPMENT_TEAM = PZ4TJ9HJ8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestBackgroundFetchingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +336,7 @@
 				DEVELOPMENT_TEAM = PZ4TJ9HJ8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestBackgroundFetchingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
